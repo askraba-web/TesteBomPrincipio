@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Ano Novo!</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.8s ease-in-out;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        #mensagem {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            z-index: 10;
+            transition: all 0.5s ease;
+            max-width: 80%;
+        }
+
+        /* Classe para o estado de folia */
+        .folia {
+            background-color: #000; /* Fundo preto para destacar o neon */
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzRyeGZueHh6Z3R3eDlvZ3RxeWlyZzRxeWlyZzRxeWlyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYt5jPR6QX5pnqM/giphy.gif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .folia #mensagem {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #f0f, 0 0 80px #f0f;
+            font-size: 3rem;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mensagem">O ano começa em branco...</div>
+
+    <script>
+        const corpo = document.body;
+        const texto = document.getElementById('mensagem');
+
+        // Aguarda 5 segundos (5000 milissegundos)
+        setTimeout(() => {
+            // Adiciona a classe de folia ao fundo
+            corpo.classList.add('folia');
+            
+            // Altera o texto
+            texto.innerHTML = "...mas termina em folia!<br>Guarde sua energia para o dia 29!";
+            
+            // Pequeno efeito sonoro opcional (se desejar adicionar)
+            console.log("Explosão de cores!");
+        }, 5000);
+    </script>
+</body>
+</html>
