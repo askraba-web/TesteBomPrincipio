@@ -80,7 +80,7 @@
 
         .festa #mensagem {
             color: #fff;
-            text-shadow: 0 0 15px #ffcc00, 0 0 30px #ff6600; /* Brilho dourado/alaranjado */
+            text-shadow: 0 0 15px #ffcc00, 0 0 30px #ff6600;
             font-size: 2.1rem;
         }
 
@@ -92,7 +92,7 @@
         }
 
         .confirmados {
-            color: #ffcc00; /* Dourado para destaque */
+            color: #ffcc00;
             font-weight: bold;
             display: block;
             margin-bottom: 12px;
@@ -113,15 +113,15 @@
 <body>
 
     <div id="container">
-        <div id="mensagem">Iniciando os preparativos para a<br>Festa do Bom Princípio...</div>
+        <div id="mensagem">Coração a mil... <br>A Festa do Bom Princípio é AMANHÃ!</div>
         
         <div id="loader-container">
             <div id="loader-bar"></div>
         </div>
 
         <div id="texto-final">
-            <span class="confirmados">Para quem já está garantido:<br>A maior edição de todos os tempos espera por você no dia 29!</span>
-            <span class="atrasados">Quem ficou de fora vai sentir falta dessa energia única... nos vemos na próxima?</span>
+            <span class="confirmados">Para quem já está no time:<br>Separe o look e a energia. Amanhã faremos história!</span>
+            <span class="atrasados">Quem não garantiu o lugar vai ver apenas pelos stories... nos vemos na próxima?</span>
         </div>
     </div>
 
@@ -131,7 +131,7 @@
 
         setTimeout(() => {
             corpo.classList.add('festa');
-            textoPrincipal.innerHTML = "A contagem regressiva começou!<br>O dia 29 será histórico.";
+            textoPrincipal.innerHTML = "O GRANDE DIA CHEGOU!<br><span style='font-size: 1.2rem; text-shadow: none;'>Nos vemos amanhã, dia 29.</span>";
         }, 5000);
     </script>
 </body>
